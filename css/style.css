@@ -1,6 +1,6 @@
 /* Stylesheet for Lochquarry Outdoor Centre */
 /* 2022 */
-/* https:///index.html */
+/* https://tsamayadesigns.github.io/LochquarryOutdoorCentre/index.html */
 
 :root {
     /* Colours */
@@ -25,6 +25,7 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--ffam);
+    text-align: center;
 }
 
 /* Navigation */
@@ -54,30 +55,57 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--bgc-0);
 }
 
+.content {
+    margin: 0 50px;
+}
 
-.fb-act {
+.fb-row {
     display: flex;
+    flex: 1;
     flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;
 }
-
+.fb-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.fb-row h4 {
+    margin-bottom: 0;
+}
+.fb-row p {
+    margin-top: 0;
+}
 .fb-img, .fb-txt {
     align-items: center;
     text-align: center;
     min-width: 40%;
     max-width: 50%;
     min-height: 200px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* margin: 10px; */
 }
 
-/* .fb-act >.fb-img:nth-child(even), .fb-txt:nth-child(even)  {
-    flex-direction: row-reverse; */
+.fb-img-1 {
+    background-image: url(../img/abseiling-1.jpg);
 }
-/* .fb-img {
-    
-} */
+.fb-img-2 {
+    background-image: url(../img/archery-2.jpg);
+}
+.img-win {
+    flex: 50%;
+}
+.fb-img-1, .fb-img-2 {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pri-2);
+    position: relative;
+    height: 350px;
+    /* min-width: 150px;
+    max-width: 300px; */
+    /* border-radius: 15px;
+    box-shadow: var(--blk-0) 2px 3px; */
+}
 
 /* Footer */
 footer {

@@ -28,7 +28,9 @@ body {
     background-color: var(--bgc-1);
     box-sizing: border-box;
 }
-
+body, html {
+    height: 100%;
+}
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--ffam);
     text-align: center;
@@ -98,9 +100,6 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     min-width: 40%;
     max-width: 50%;
-    /* min-height: 200px; */
-    /* border: 1px solid black; */
-    /* margin: 10px; */
 }
 .fb-txt {
     padding: 0 20px;
@@ -118,7 +117,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .txt-hero {
     text-align: center;
-    /* position: absolute; */
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

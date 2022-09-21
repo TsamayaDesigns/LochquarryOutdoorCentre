@@ -6,6 +6,7 @@
     /* Colours */
     --pri-0: #5FA739;
     --pri-1: #B0E495;
+    --pri-3: #458C1F;    
     --pri-4: #286706;
     --sec-1-0: #C06E42;
     --sec-1-1: #FFC5A7;
@@ -39,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* Navigation */
 .topnav {
-    background-color: var(--pri-0);
+    background-color: var(--pri-3);
     height: 80px;
 }
 .logo {
@@ -57,7 +58,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 5px 16px;
     font-size: 1.5em;
     color: var(--bgc-1);
-    background-color: var(--pri-0);
+    /* background-color: var(--pri-0); */
     font-weight: 700;
     font-family: var(--ffam);
 }

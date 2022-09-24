@@ -72,10 +72,48 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0 100px;
     background-color: var(--bgc-0);
 }
-.content h1 {
+.content h1, h2 {
     margin: 0;
     padding-top: 25px;
 }
+
+.content-about {
+    background-color: transparent;
+}
+
+/* Testimonials */
+.test-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.testimonial {
+    border: 2px solid var(--sec-1-4);;
+    background-color: var(--sec-1-0);;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 20px 20px 40px;
+    flex: 1;
+}
+.testimonial p:nth-of-type(even) {        
+    font-family: var(--ffam);
+    text-align: center;
+}
+.testimonial::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.testimonial img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.testimonial span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+  
 
 .fb-act {
     margin: 50px 50px 0;
@@ -85,7 +123,7 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: row; 
     justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .fb-row:nth-child(even) {
     flex-direction: row-reverse;
@@ -107,8 +145,17 @@ h1,h2,h3,h4,h5,h6 {
     margin:auto;
     align-items: flex-start;
 }
+
+.fb-col {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
 .img-hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/loc-1.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,6 +188,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: large; 
     margin-top: 50px;
 }
+
 .fb-img-1 {
     background-image: url(../img/archery-2.jpg);
 }
@@ -150,9 +198,7 @@ h1,h2,h3,h4,h5,h6 {
 .fb-img-3 {
     background-image: url(../img/abseiling-1.jpg);
 }
-/* .img-win {
-    flex: 50%;
-} */
+
 .fb-img {
     margin: 0 20px;
     background-repeat: no-repeat;
@@ -167,6 +213,44 @@ h1,h2,h3,h4,h5,h6 {
     /* border-radius: 15px;
     box-shadow: var(--blk-0) 2px 3px; */
 }
+
+.fb-img-pers {
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--sec-1-0);
+    position: relative;
+    height: 450px;
+    width: 450px;
+}
+
+/* Personnel Cards */
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 7%;
+}
+/* .col-about {
+    width: 33.3%;
+    margin-bottom: 20px;
+    padding: 0 10px;
+} */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 30%;
+    padding: 10px;
+}
+.card-txt {
+    padding: 0 16px;
+    text-align: center;
+    font-size: large; 
+}
+.title {
+    color:  var(--sec-1-4);
+}
+  
+
 
 /* Footer */
 footer {

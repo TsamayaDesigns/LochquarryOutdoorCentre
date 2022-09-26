@@ -206,6 +206,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .txt-hero p {
     margin: 50px 0;
+    font-size: larger;
 }
 
 button {
@@ -226,6 +227,7 @@ button:hover {
     color: var(--pri-4);
 }
 
+/* Image styling - index.html & activities.html */
 .fb-img-1 {
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hillwalking-1.jpg);
 }
@@ -263,6 +265,9 @@ button:hover {
     width: 450px;
 }
 
+.fb-img-1, .fb-img-2, .fb-img-3 {
+    margin-bottom: 70px;
+}
 /* Personnel Cards */
 .cards {
     display: flex;
